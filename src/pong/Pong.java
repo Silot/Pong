@@ -18,9 +18,13 @@ public class Pong implements ActionListener {
      */
     
     public static Pong pong;
+    
     public int width = 700, height = 700;
+    
     public Renderer renderer;
+    
     public Paddle player1;
+    
     public Paddle player2;
     
     public Pong(){
