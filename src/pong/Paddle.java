@@ -31,7 +31,7 @@ public class Paddle
 
 	public void render(Graphics g)
 	{
-		g.setColor(Color.WHITE);
+		g.setColor(Color.GREEN);
 		g.fillRect(x, y, width, height);
 	}
 

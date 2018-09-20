@@ -153,7 +153,7 @@ public class Pong implements ActionListener, KeyListener
 
 		if (gameStatus == 0)
 		{
-			g.setColor(Color.WHITE);
+			g.setColor(Color.GREEN);
 			g.setFont(new Font("Arial", 1, 50));
 
 			g.drawString("PONG", width / 2 - 75, 50);
@@ -180,7 +180,7 @@ public class Pong implements ActionListener, KeyListener
 
 		if (gameStatus == 1)
 		{
-			g.setColor(Color.WHITE);
+			g.setColor(Color.RED);
 			g.setFont(new Font("Arial", 1, 50));
 			g.drawString("PAUSED", width / 2 - 103, height / 2 - 25);
 		}
@@ -209,24 +209,27 @@ public class Pong implements ActionListener, KeyListener
 
 		if (gameStatus == 3)
 		{
-			g.setColor(Color.WHITE);
+			g.setColor(Color.GREEN);
 			g.setFont(new Font("Arial", 1, 50));
-
 			g.drawString("PONG", width / 2 - 75, 50);
-
+                        g.setColor(Color.RED);
+                        g.setFont(new Font("Arial", 1, 60));
+                        g.drawString("GAME OVER ", width / 2 - 185, 230);
+                        g.setColor(Color.GREEN);
+                        g.setFont(new Font("Arial", 1, 50));
 			if (bot && playerWon == 2)
 			{
-				g.drawString("The Bot Wins!", width / 2 - 170, 200);
+				g.drawString("The Bot Wins!", width / 2 - 170, 300);
 			}
 			else
 			{
-				g.drawString("Player " + playerWon + " Wins!", width / 2 - 165, 200);
+				g.drawString("Player " + playerWon + " Wins!", width / 2 - 165, 300);
 			}
 
 			g.setFont(new Font("Arial", 1, 30));
 
-			g.drawString("Press Space to Play Again", width / 2 - 185, height / 2 - 25);
-			g.drawString("Press ESC for Menu", width / 2 - 140, height / 2 + 25);
+			g.drawString("Press Space to Play Again", width / 2 - 185, 380);
+			g.drawString("Press ESC for Menu", width / 2 - 140, 430);
 		}
 	}
 

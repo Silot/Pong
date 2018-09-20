@@ -133,7 +133,7 @@ public class Ball
 
 	public void render(Graphics g)
 	{
-		g.setColor(Color.WHITE);
+		g.setColor(Color.GREEN);
 		g.fillOval(x, y, width, height);
 	}
 
